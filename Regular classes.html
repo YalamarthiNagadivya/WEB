@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLass types</title>
+	<style type="text/css">
+		p.abstract
+		{
+			font-style: italic;
+			margin: 0.5cm;
+			font-size: 20pt;
+		}
+		pre.formatexample
+		{
+			font-style: bold;
+			color: red;
+			font-size: 10pt;
+		}
+		pre.quotations
+		{
+			text-align: center;
+			margin-right: 0.5cm;
+			margin-left: 0.5cm;
+			font-size: 15pt;
+			font-style: italic;
+			color: brown;
+		}
+		p#abstract
+		{
+			font-style: italic;
+			margin: 0.5cm;
+			font-size: 20pt;
+		}
+		pre#formatexample
+		{
+			font-style: bold;
+			color: red;
+			font-size: 10pt;
+		}
+		pre#quotations
+		{
+			text-align: center;
+			margin-right: 0.5cm;
+			margin-left: 0.5cm;
+			font-size: 15pt;
+			font-style: italic;
+			color: brown;
+		}
+	</style>
+</head>
+<body>
+	<p class='abstract'>Regular classes</p>
+	<pre class='formatexample'>
+		p.abstract
+		{
+			font-style: italic;
+			margin: 0.5cm;
+			font-size: 20pt;
+		}
+		p.equation
+		{
+			font-style: bold;
+			color: red;
+			font-size: 30pt;
+		}
+		p.quotations
+		{
+			text-align: center;
+			margin-right: 0.5cm;
+			margin-left: 0.5cm;
+			font-size: 35pt;
+			font-style: italic;
+			color: brown;
+		}
+	</pre>
+	<pre class='quotations'>the first rule in the example creates a class of paragraph styles named "abstract" 
+	 whose text will be italic and indented from the left and right margins by a half-centimeter. 
+	Similarly, the second paragraph style-class "equation" instructs the browser to center 
+	the text and to use the Symbol typeface to display the text. The last style rule creates
+	a style with centered text and half-centimeter margins, applying this style to all 
+	level one headers as well as creating a class of the
+tag named centered with that style.</pre>
+ <pre class='quotations'>Keywords  are p.abstract, p.formatexample,p.quotations</pre>
+ <p class='abstract'>Generic classes</p>
+ <pre class='formatexample'>
+ 		.abstract
+		{
+			font-style: italic;
+			margin: 0.5cm;
+			font-size: 20pt;
+		}
+		.equation
+		{
+			font-style: bold;
+			color: red;
+			font-size: 30pt;
+		}
+		.quotations
+		{
+			text-align: center;
+			margin-right: 0.5cm;
+			margin-left: 0.5cm;
+			font-size: 35pt;
+			font-style: italic;
+			color: brown;
+		}</pre>
+ <pre class='quotations'>creates a generic class named italic. To use it, simply include its name with the 
+ class attribute.So,for instance, use or to create an italic paragraph or header.</pre>
+<p id='abstract'>ID Classes</p>
+<pre id='formatexample'>
+		p#abstract
+		{
+			font-style: italic;
+			margin: 0.5cm;
+			font-size: 20pt;
+		}
+		p#equation
+		{
+			font-style: bold;
+			color: red;
+			font-size: 30pt;
+		}
+		p#quotations
+		{
+			text-align: center;
+			margin-right: 0.5cm;
+			margin-left: 0.5cm;
+			font-size: 35pt;
+			font-style: italic;
+			color: brown;
+		}
+	</pre>
+<pre id='quotations'>an identifier to the element that is unique within the document. 
+This identifier can be the target of a URL, used by automated document processing tools 
+and can also be used to specify a style rule for the element. 
+To create a style class that can be applied with the id attribute, 
+follow the same syntax used for style classes, except with a # 
+character before the class name instead of a period. to create a blue heading, or add 
+id=yellow to almost any tag to turn it yellow. You can mix and match both class and id
+ attributes.</pre>
+<p id='abstract'>Pseudo classes</p>
+<pre id='quotations'>There are seven pseudo-classes, three of which are explicitly 
+associated with the 'a' tag.</pre>
+<p id='abstract'>Hyperlink pseudo classes</p>
+<pre id='formatexample'>a:link {color: blue} 
+	a:active {color: red; font-weight: bold} 
+	a:visited {color: green}
+	</pre>
+<pre id='quotations'>three special states for the hyperlinks created by the 'a' tag 
+	:not visited, being visited.The browser may change the appearance of the tag's 
+	contents to indicate its state, such as with underlining or color. 
+	Through pseudo-classes, you can control how these states get displayed
+	by defining styles for a:link (not visited), a:active (being visited),
+	and a:visited. </pre>
+<p id='abstract'>Interaction pseudo classes</p>
+<pre id='formatexample'>a:hover {color: yellow} </pre>
+<pre id='quotations'>two new pseudo-classes, which along with :active, relate to
+ user actions and advise the interactive agent, such as a browser, how to display
+ the affected element as the user interacts with the element. In other words, 
+ these two pseudo-classes are dynamic: hover and focus.
+ the text associated with unvisited links will be rendered in blue, turn yellow when
+ you point to it with the mouse, go red while you visit it, and turn green after 
+ you're done visiting.
+ </pre>
+</body>
+</html>
